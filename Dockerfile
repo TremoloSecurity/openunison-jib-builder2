@@ -13,7 +13,7 @@ LABEL io.k8s.description="Platform for building Tremolo Security OpenUnison" \
       io.openshift.tags="builder,1.0.16,sso,identity management" \
       io.openshift.s2i.scripts-url="image:///usr/local/bin/s2i"
 
-RUN apt-get update;apt-get -y install curl openjdk-11-jdk-headless wget unzip;apt-get -y upgrade;apt-get clean;rm -rf /var/lib/apt/lists/*; \ 
+RUN apt-get update;apt-get -y install curl openjdk-11-jdk-headless wget unzip libsodium23;apt-get -y upgrade;apt-get clean;rm -rf /var/lib/apt/lists/*; \ 
     mkdir -p /etc/openunison && \
     mkdir -p /etc/openunison-local && \
     mkdir -p /usr/local/openunison && \
