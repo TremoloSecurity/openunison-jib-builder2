@@ -6,7 +6,7 @@ ENV BUILDER_VERSION=1.0 \
     JDK_VERSION=1.11.0 \
     MAVEN_VERSION=3.3.9 \
     OPENUNISON_VERSION="1.0.31" \
-    LIB_SODIUM_PATH="/usr/lib/aarch64-linux-gnu/libsodium.so.23"
+    LIB_SODIUM_PATH="/usr/lib/x86_64-linux-gnu/libsodium.so.23"
 
 LABEL io.k8s.description="Platform for building Tremolo Security OpenUnison" \
       io.k8s.display-name="OpenUnison Builder 1.0.16" \
